@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+    <title>CSS lists</title>
     <style>
-        p:first-child{
-            background-color: yellow;
-            color: red;
+        ul{
+            display: flex;
         }
-        p {
-            background-color: blue;
-            color: white;
+        nav ul li{
+            /* list-style: none; */
+            margin: 45px;
+            list-style-type: "❤️";
         }
     </style>
 </head>
 <body>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ipsum optio natus ex eveniet, repellat repudiandae illo, quia expedita quisquam dolores magni dolorem!</p>
-        <p>Yes i am a para</p>
-        <p>Yes i am another para</p>
-    </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ipsum optio natus ex eveniet, repellat repudiandae illo, quia expedita quisquam dolores magni dolorem!</p>
-        <p>Yes i am a para</p>
-        <p>Yes i am another para</p>
-    </div>
+    <nav>
+        <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contant</li>
+    </ul>
+    </nav>
 </body>
 </html>
