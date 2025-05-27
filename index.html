@@ -4,73 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position</title>
+    <title>Exercise 3</title>
     <style>
         * {
             margin: 0;
             padding: 0;
         }
 
-        .parent{
-            border: 3px solid purple;
-            margin: 23px;
-            padding: 34px;
+        body {
+            background-color: #d4cfcf;
+
         }
 
-        .box {
-            border: 2px solid black;
-            width: 80vw;
-            height: 122px;
-            margin: auto;
+        .out {
+            background-color: white;
+            border: 1px solid rgb(160, 145, 145);
+            margin: 65px auto;
+            width: 0px;
+            padding: 217px;
+            height: 100px;
+            border-radius: 15px;
         }
 
-        .box1 {
-            position: absolute;
-            top: 4px;
-            left: 12px;
-            background-color: aqua;
-            z-index: 1;
-        }
-
-        .box2 {
+        .photo img {
+            width: 399px;
             position: relative;
-            background-color: rgb(43, 255, 0);
-            top: 12px;
-            left: 23px;
+            bottom: 203px;
+            right: 199px;
+            border-radius: 15px;
+        }
+
+        .text {
+            position: relative;
+            bottom: 200px;
+            display: flex;
+            border: 1px solid rgb(160, 145, 145);
+            width: 50px;
+            border-radius: 12px;
+            color:rgb(160, 145, 145) ;
 
         }
 
-        .box3 {
-            background-color: rgb(68, 0, 255);
+        .nature {
+            margin-left: -175px;
+            padding: 0px;
+            margin-top: 10px;
+            text-align: center;
+            padding-left: 11px;
+        }
+
+        .like {
+            margin-left: -87px;
+            padding: 0px;
+            margin-top: -20px;
+            padding-left: 17px;
+        }
+
+        .sub {
+            margin-left: -204px;
+            margin-top: -187px;
+            padding-left: 17px;
 
         }
 
-        .box4 {
-            background-color: rgb(229, 255, 0);
+        .text1 {
+            margin-left: -185px;
+            margin-top: 11px;
+            width: 356px;
+            color: rgb(160, 145, 145);
 
         }
 
-        .fixed p{
-            position: fixed;
-            left: 70vw;
-            width: 350px;
-            height: 150px;
-            border: 2px solid red;
-            bottom: 0px;
+        .read {
+            width: 77px;
+            padding: 8px;
+            border-radius: 20px;
+            position: relative;
+            left: -47px;
+            top: 22px;
+            font-weight: 100;
+            font-size: 16px;
+            background-color: #cde2e9;
+            color: #1219ff;
         }
     </style>
 </head>
 
 <body>
-    <div class="parent">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
-    </div>
-    <div class="fixed">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem dignissimos nostrum libero ratione beatae illum inventore magni sequi dolore quis, asperiores odit ipsam maxime modi enim culpa, laborum dicta fugiat laudantium harum aut rerum accusamus sit excepturi. Aliquam at laborum fuga adipisci aperiam, veritatis sit?</p>
-    </div>
+    <Div class="out">
+        <div class="photo">
+            <img src="https://cdn.create.vista.com/api/media/small/521298646/stock-photo-blurr-silhouette-asian-young-man-hat-hiking-standing-open-arm"
+                alt="">
+        </div>
+        <div class="text nature">Nature</div>
+        <div class="text like">Like</div>
+        <h2 class="sub">Fell the Nature</h2>
+        <p class=" text1">Nature, in the broadest sense, is the physical world or universe. "Nature" can refer to the
+            phenomena of the physical world, and also to life in general. The study of nature is a large, if not the
+            only, part of science.</p>
+        <h2 class="read">Read More</h2>
+    </Div>
 </body>
 
 </html>
