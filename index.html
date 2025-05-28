@@ -1,109 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 3</title>
+    <title>Variable</title>
     <style>
-        * {
+
+        *{
             margin: 0;
             padding: 0;
         }
 
-        body {
-            background-color: #d4cfcf;
-
+        :root{
+            --color: rgb(0, 255, 76);
+            --seccolor: rgb(97, 190, 128);
         }
 
-        .out {
-            background-color: white;
-            border: 1px solid rgb(160, 145, 145);
-            margin: 65px auto;
-            width: 0px;
-            padding: 217px;
-            height: 100px;
-            border-radius: 15px;
+        div{
+            background-color: var(--color);
         }
-
-        .photo img {
-            width: 399px;
-            position: relative;
-            bottom: 203px;
-            right: 199px;
-            border-radius: 15px;
-        }
-
-        .text {
-            position: relative;
-            bottom: 200px;
+        ul{
             display: flex;
-            border: 1px solid rgb(160, 145, 145);
-            width: 50px;
-            border-radius: 12px;
-            color:rgb(160, 145, 145) ;
-
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+        .container{
+            background-color: var(--seccolor);
         }
 
-        .nature {
-            margin-left: -175px;
-            padding: 0px;
-            margin-top: 10px;
-            text-align: center;
-            padding-left: 11px;
-        }
-
-        .like {
-            margin-left: -87px;
-            padding: 0px;
-            margin-top: -20px;
-            padding-left: 17px;
-        }
-
-        .sub {
-            margin-left: -204px;
-            margin-top: -187px;
-            padding-left: 17px;
-
-        }
-
-        .text1 {
-            margin-left: -185px;
-            margin-top: 11px;
-            width: 356px;
-            color: rgb(160, 145, 145);
-
-        }
-
-        .read {
-            width: 77px;
-            padding: 8px;
-            border-radius: 20px;
-            position: relative;
-            left: -47px;
-            top: 22px;
-            font-weight: 100;
-            font-size: 16px;
-            background-color: #cde2e9;
-            color: #1219ff;
+        img{
+            opacity: 0.5;
         }
     </style>
 </head>
-
 <body>
-    <Div class="out">
-        <div class="photo">
-            <img src="https://cdn.create.vista.com/api/media/small/521298646/stock-photo-blurr-silhouette-asian-young-man-hat-hiking-standing-open-arm"
-                alt="">
-        </div>
-        <div class="text nature">Nature</div>
-        <div class="text like">Like</div>
-        <h2 class="sub">Fell the Nature</h2>
-        <p class=" text1">Nature, in the broadest sense, is the physical world or universe. "Nature" can refer to the
-            phenomena of the physical world, and also to life in general. The study of nature is a large, if not the
-            only, part of science.</p>
-        <h2 class="read">Read More</h2>
-    </Div>
-</body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contant</li>
+        </ul>
+    </div>
 
+    <div class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste accusantium tempore quae architecto repellendus eligendi deserunt explicabo veniam, velit mollitia expedita doloremque, distinctio enim, aut ratione est quos reprehenderit cupiditate! Maxime illo nemo est quidem eveniet tempora rerum quas modi dignissimos, harum odio expedita libero!</div>
+    <img src="https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=717/https://s3.cointelegraph.com/uploads/2023-01/158029af-a86a-402f-a5b5-e915cc69f138.JPG" alt="">
+</body>
 </html>
