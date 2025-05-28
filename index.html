@@ -3,48 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variable</title>
+    <title>Multi Color</title>
     <style>
-
         *{
             margin: 0;
             padding: 0;
         }
 
         :root{
-            --color: rgb(0, 255, 76);
-            --seccolor: rgb(97, 190, 128);
+            --color: red;
+            --seccolor:blue;
+            --thicolor:black;
+            --forcolor:green;
         }
 
-        div{
-            background-color: var(--color);
+        .bar{
+            background-color: var(--forcolor);
         }
+
         ul{
             display: flex;
         }
+
         ul li{
             list-style: none;
-            padding: 34px;
-        }
-        .container{
-            background-color: var(--seccolor);
-        }
-
-        img{
-            opacity: 0.5;
+            margin: 34px;
         }
     </style>
 </head>
 <body>
-    <div>
+    <nav class="bar">
         <ul>
             <li>Home</li>
             <li>About</li>
             <li>Contant</li>
         </ul>
-    </div>
-
-    <div class="container">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste accusantium tempore quae architecto repellendus eligendi deserunt explicabo veniam, velit mollitia expedita doloremque, distinctio enim, aut ratione est quos reprehenderit cupiditate! Maxime illo nemo est quidem eveniet tempora rerum quas modi dignissimos, harum odio expedita libero!</div>
-    <img src="https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=717/https://s3.cointelegraph.com/uploads/2023-01/158029af-a86a-402f-a5b5-e915cc69f138.JPG" alt="">
+    </nav>
 </body>
 </html>
